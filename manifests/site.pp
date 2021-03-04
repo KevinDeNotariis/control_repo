@@ -1,6 +1,5 @@
 node default {
-  file {'/root/MyFile':
-      ensure => file,
-      content => "Hello world",
-  }
+}
+node 'master.puppet.vm' {
+  include role::master_server
 }
