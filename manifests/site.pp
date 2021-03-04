@@ -1,5 +1,6 @@
 node default {
-  file {'/root/README':
-      ensure => file
+  file {'/root/MyFile':
+      ensure => file,
+      content => "Hello world",
   }
 }
